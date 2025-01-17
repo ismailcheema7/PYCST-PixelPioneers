@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>US News - Mockup</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .header {
+            background-color: #003366;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .search {
+            margin-left: 20px;
+        }
+        .main-nav {
+            background-color: #f0f0f0;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        .main-nav a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .main-article {
+            width: 60%;
+        }
+        .main-article img {
+            width: 100%;
+            height: auto;
+        }
+        .side-articles {
+            width: 35%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .side-article {
+            display: flex;
+            gap: 10px;
+        }
+        .side-article img {
+            width: 30%;
+            height: auto;
+        }
+        .side-article div {
+            width: 70%;
+        }
+        .footer {
+            background-color: #f0f0f0;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>US News</h1>
+        <div class="search">
+            <input type="text" placeholder="Search US News...">
+            <button>Search</button>
+        </div>
+    </header>
+    <nav class="main-nav">
+        <a href="#">Top News</a>
+        <a href="#">Best Jobs</a>
+        <a href="#">Best Cities</a>
+        <a href="#">Best Diets</a>
+        <a href="#">Healthcare</a>
+        <a href="#">Investing Tips</a>
+    </nav>
+    <div class="content">
+        <div class="main-article">
+            <img src="mrlawyer.png" alt="Main Article Image">
+            <h2>Bessent Calls for 'Economic Golden Age'</h2>
+            <p>The billionaire investor is considered likely to win Senate approval to head the Treasury Department.</p>
+        </div>
+        <div class="side-articles">
+            <div class="side-article">
+                <img src="globalrisks.png" alt="Article 1">
+                <div>
+                    <h3>The Top 10 Global Risks for 2025</h3>
+                    <p>A new report finds that 'unprecedented geopolitical challenges' loom in 2025.</p>
+                </div>
+            </div>
+            <div class="side-article">
+                <img src="trump.png" alt="Article 2">
+                <div>
+                    <h3>Opinion: The Oligarchy Starts on Monday</h3>
+                    <p>The ultra-wealthy are set to rule in the new administration.</p>
+                </div>
+            </div>
+            <div class="side-article">
+                <img src="inflationrates.png" alt="Article 3">
+                <div>
+                    <h3>U.S. Inflation Rates and 2025 Forecast</h3>
+                    <p>Rates are trending slightly upward, but still down from highs in 2022.</p>
+                </div>
+            </div>
+            <div class="side-article">
+                <img src="noonecaresguy.png" alt="Article 4">
+                <div>
+                    <h3>Opinion: Trump EPA Pick Will Harm the Environment</h3>
+                    <p>Lee Zeldin voted in Congress to gut the Environmental Protection Agency.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2025 US News. All rights reserved.</p>
+    </footer>
+</body>
+</html>

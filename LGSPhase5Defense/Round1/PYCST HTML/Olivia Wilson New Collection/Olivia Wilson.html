@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our New Collection</title>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      position: relative;
+      z-index: 10;
+      background: transparent;
+    }
+
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      border-bottom: 2px solid #a8743b;
+    }
+
+    .logo {
+      font-family: 'League Spartan', sans-serif;
+      font-size: 26px;
+      font-weight: 700;
+      color: #000;
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+    }
+
+    .nav-links li {
+      margin-left: 20px;
+    }
+
+    .nav-links a {
+      font-family: 'League Spartan', sans-serif;
+      text-decoration: none;
+      color: #000;
+      font-weight: 700;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #a8743b;
+    }
+
+    .hero {
+      background-image: url('photo1.jpg');
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+      padding: 80px 20px;
+      color: #fff;
+      max-width: 90%;
+      margin: 0 auto;
+      border-radius: 10px;
+    }
+
+    .hero h1 {
+      font-family: 'League Spartan', sans-serif;
+      font-size: 50px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .search-bar {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .search-bar input {
+      width: 300px;
+      padding: 10px;
+      border: none;
+      border-radius: 20px 0 0 20px;
+      outline: none;
+    }
+
+    .search-bar button {
+      background-color: #a8743b;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 0 20px 20px 0;
+      cursor: pointer;
+      color: #fff;
+    }
+
+    .search-bar button img {
+      width: 20px;
+    }
+
+    .sidebar {
+      float: left;
+      width: 20%;
+      padding: 10px;
+      background-color: transparent;
+      margin-left: 10px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .sidebar button {
+      font-family: 'League Spartan', sans-serif;
+      width: 100%;
+      padding: 15px;
+      margin-bottom: 0;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      font-size: 16px;
+      text-align: left;
+      border-radius: 20px;
+    }
+
+    .sidebar button.active {
+      background-color: #a8743b;
+      color: #fff;
+    }
+
+    .sidebar button:hover {
+      background-color: #a8743b;
+      color: #fff;
+    }
+
+    .product-grid {
+      margin-left: 22%;
+      display: flex;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .product {
+      padding: 15px;
+      text-align: center;
+      flex: 1;
+      max-width: 300px;
+    }
+
+    .product img {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .product h3 {
+      font-family: 'League Spartan', sans-serif;
+      margin: 10px 0;
+      font-size: 18px;
+    }
+
+    .product-details {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    .product-details p {
+      font-family: 'League Spartan', sans-serif;
+      color: #a8743b;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    .add-button {
+      font-family: 'League Spartan', sans-serif;
+      background-color: #a8743b;
+      color: #fff;
+      border: none;
+      padding: 8px 15px;
+      cursor: pointer;
+      border-radius: 20px;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .add-button img {
+      width: 16px;
+    }
+
+    .add-button:hover {
+      background-color: #875c2a;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <img src="pfpicon.avif" alt="User Icon">
+        Olivia Wilson
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Cart</a></li>
+          <li><a href="#">Pre Order</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Our New Collection</h1>
+      <div class="search-bar">
+        <input type="text" placeholder="Search">
+        <button><img src="searchicon.jpeg.jpg" alt="Search Icon"></button>
+      </div>
+    </section>
+
+    <aside class="sidebar">
+      <ul>
+        <li><button class="active">New Collection</button></li>
+        <li><button>Special Promo</button></li>
+        <li><button>Casual Bag</button></li>
+        <li><button>Party Bag</button></li>
+      </ul>
+    </aside>
+
+    <section class="product-grid">
+      <div class="product">
+        <img src="photo2.jpg" alt="Beige Casual Bag">
+        <h3>Beige Casual Bag</h3>
+        <div class="product-details">
+          <p>$68.56</p>
+          <button class="add-button"><img src="bagicon.png" alt="Bag Icon"> Add</button>
+        </div>
+      </div>
+      <div class="product">
+        <img src="photo3.jpg" alt="Brown Casual Bag">
+        <h3>Brown Casual Bag</h3>
+        <div class="product-details">
+          <p>$68.56</p>
+          <button class="add-button"><img src="bagicon.png" alt="Bag Icon"> Add</button>
+        </div>
+      </div>
+      <div class="product">
+        <img src="photo4.webp" alt="Orange Casual Bag">
+        <h3>Orange Casual Bag</h3>
+        <div class="product-details">
+          <p>$68.56</p>
+          <button class="add-button"><img src="bagicon.png" alt="Bag Icon"> Add</button>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
